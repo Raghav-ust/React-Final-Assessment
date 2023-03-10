@@ -11,7 +11,6 @@ import {
 } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
 import LineChart from './LineChart';
-import { HorizontalBarChart } from './HorizontalBarChart';
 import { GroupedBar } from './GroupedBar';
 import ResponsiveDrawer from './ResponsiveDrawer';
 
@@ -68,7 +67,6 @@ export default function Dashboard() {
       <LineChart />
     </div>
     <div className='chart'>
-      <HorizontalBarChart /> 
       <GroupedBar />
     </div>
   </div>
