@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import validation from "./Validation";
-import { useNavigate } from "react-router-dom";
+import { useNavigate,Link } from "react-router-dom";
 import LockOpenIcon from "@mui/icons-material/LockOpen";
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
@@ -20,7 +20,6 @@ export default function Login() {
   }
 
   function handleSubmit(e) {
-    //e.preventDefault();
     let validationResponse = validation(values);
     setError(validationResponse);
     if (Object.keys(validationResponse).length === 0) {
@@ -57,6 +56,11 @@ export default function Login() {
           onClick={() => handleSubmit()}>
           Login
         </Button>
+        <li>
+                <Link to={"/"} >
+                  Signup
+                </Link>
+              </li>
       </div>
     </div>
   );

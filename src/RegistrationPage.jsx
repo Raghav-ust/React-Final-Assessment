@@ -1,7 +1,7 @@
 import { React } from 'react';
 import { useState } from 'react';
 import './RegistrationPage.css';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate,Router,Route,Link } from 'react-router-dom';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import { styled } from '@mui/material/styles';
@@ -111,7 +111,6 @@ const RegisterPage = () => {
           </div>
           <FormLabel id="demo-customized-radios">Gender</FormLabel>
           <RadioGroup
-            defaultValue="male"
             aria-labelledby="demo-customized-radios"
             name="customized-radios"
           >
@@ -128,7 +127,12 @@ const RegisterPage = () => {
         <Button variant="contained"
           type="submit"
           className="register-button"
-          onClick={() => handleClick()}>Register</Button>
+          onClick={() => handleClick()}>Register</Button>;
+              <li>
+                <Link to={"/login"} >
+                  Already have an account
+                </Link>
+              </li>
       </div>
     </div>
   );
