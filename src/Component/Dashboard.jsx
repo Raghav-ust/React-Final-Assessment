@@ -11,7 +11,7 @@ import {
 } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
 import LineChart from './LineChart';
-import { GroupedBar } from './GroupedBar';
+import { GroupedBar } from './Bar';
 import ResponsiveDrawer from './ResponsiveDrawer';
 
 ChartJS.register(

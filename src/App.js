@@ -7,9 +7,9 @@ import ProfilePage from './ProfilePage';
 
 import ResponsiveDrawer from './Component/ResponsiveDrawer';
 import Products from './Component/Products';
-import Posts from './Component/Posts';
+import Posts from './Component/Post';
 import Todos from './Component/Todos';
-import UsersListing from './Component/UsersListing';
+import UsersListing from './Component/Users';
 
 function App() {
   
